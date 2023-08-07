@@ -16,13 +16,8 @@ const packageFile = require("./package.json");
 var os = require("os");
 var hostname = os.hostname();
 
-const UNIT_RPM='rpm'
-const UNIT_MO='Mo'
-const UNIT_PERCENT='%'
-const UNIT_WATT='Watt'
-
-const testPrivateKey = `-----BEGIN RSA PRIVATE KEY-----
-BIICXQIBAAKBgQC2RTg7dNjQMwPzFwF0gXFRCcRHha4H24PeK7ey6Ij39ay1hy2o
+const testPrivateKey01 = `-----BEGIN RSA PRIVATE KEY-----
+FIICXQIBAAKBgQC2RTg7dNjQMwPzFwF0gXFRCcRHha4H24PeK7ey6Ij39ay1hy2o
 H9NEZOxrmAb0bEBDuECImTsJdpgI6F3OwkJGsOkIH09xTk5tC4fkfY8N7LklK+uM
 ndN4+VUXTPSj/U8lQtCd9JnnUL/wXDc46wRJ0AAKsQtUw5n4e44f+aYggwIDAQAB
 AoGAW2/cJs+WWNPO3msjGrw5CYtZwPuJ830m6RSLYiAPXj0LuEEpIVdd18i9Zbht
@@ -36,6 +31,11 @@ RsV0gT8HRLAiqY4AwDfZe6n8HRw/rnpmoe7l1IHn5W/3aOjbZ04Gvzg9HouIpaqI
 O8xKathZkCKrsEBz6aECQQCLgqOCJz4MGIVHP4vQHgYp8YNZ+RMSfJfZA9AyAsgP
 Pc6zWtW2XuNIGHw9pDj7v1yDolm7feBXLg8/u9APwHDy
 -----END RSA PRIVATE KEY-----`
+
+const UNIT_RPM='rpm'
+const UNIT_MO='Mo'
+const UNIT_PERCENT='%'
+const UNIT_WATT='Watt'
 
 module.exports = function(homebridge) {
     if(!isConfig(homebridge.user.configPath(), "accessories", "MacOSXSysInfo")) {
