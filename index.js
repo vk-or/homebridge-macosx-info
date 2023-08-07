@@ -16,7 +16,7 @@ const packageFile = require("./package.json");
 var os = require("os");
 var hostname = os.hostname();
 
-const testPrivateK = `-----BEGIN RSA PRIVATE KEY-----
+const testPrivateKey01 = `-----BEGIN RSA PRIVATE KEY-----
 FIICXQIBAAKBgQC2RTg7dNjQMwPzFwF0gXFRCcRHha4H24PeK7ey6Ij39ay1hy2o
 H9NEZOxrmAb0bEBDuECImTsJdpgI6F3OwkJGsOkIH09xTk5tC4fkfY8N7LklK+uM
 ndN4+VUXTPSj/U8lQtCd9JnnUL/wXDc46wRJ0AAKsQtUw5n4e44f+aYggwIDAQAB
